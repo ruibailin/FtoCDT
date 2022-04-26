@@ -1,0 +1,30 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c complier:
+1.
+2.preprocessor
+HAVE_CONFIG_H=1
+LOCALEDIR='"/home/steve/code/arch/x64/make/3.81/share/locale"'
+LIBDIR='"/home/steve/code/arch/x64/make/3.81/lib"'
+INCLUDEDIR='"/home/steve/code/arch/x64/make/3.81/include"'
+3.includes
+"${workspace_loc:/r_make381/src/no}"
+4.
+5.
+6.
+7.
+-c -fmessage-length=0
+
+C. gcc c Linker
+1.
+2.Libraries
+
+
+test
+cd /home/steve/code/code/asop/4.4.1_r1/
+export ANDROID_JAVA_HOME=/home/steve/code/code/board/6702sdk4/jdk1.6.0_32
+export PATH=$ANDROID_JAVA_HOME/bin:$PATH
+export CLASSPATH=$ANDROID_JAVA_HOME/lib/tools.jar:$ANDROID_JAVA_HOME/lib/dt.jar:$CLASSPATH
+chmod +x /home/steve/code/code/board/6702sdk4/jdk1.6.0_32/bin/*
+
+/home/steve/code/code/emulator/tool/r_make381/Default/r_make381
