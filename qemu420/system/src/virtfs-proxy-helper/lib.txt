@@ -1,0 +1,9 @@
+cap
+cap-ng
+util
+rt
+glib-2.0
+gthread-2.0
+z
+m
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/dtc/libfdt

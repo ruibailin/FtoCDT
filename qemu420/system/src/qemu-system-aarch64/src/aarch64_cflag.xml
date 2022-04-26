@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu/target/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu/trace</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel/stubs</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel/tcg</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/audio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/authz</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/backends</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/block</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/capstone/include</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/chardev</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/crypto</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/disas</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/disas/libvixl</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/dtc/libfdt</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/dump</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/fpu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/fsdev</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/acpi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/audio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/block/dataplane</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/block</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/bt</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/char</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/core</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/cpu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/display</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/i2c</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/ide</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/input</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/intc</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/ipack</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/misc</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net/can</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net/rocker</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/nvram</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci-bridge</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci-host</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pcmcia</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/scsi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/sd</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/smbios</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/timer</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/tpm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/usb</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/vfio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/virtio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/watchdog</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/include</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/io</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/linux-headers</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/migration</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/monitor</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/nbd</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/net/can</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/net</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/qapi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/qom</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/replay</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/scsi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/slirp/src</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/target/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/tcg</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/tcg/i386</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/trace</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/ui</includepath>
+<includepath>/usr/include/glib-2.0</includepath>
+<includepath>/usr/include/libusb-1.0</includepath>
+<includepath>/usr/include/libxml2</includepath>
+<includepath>/usr/include/pixman-1</includepath>
+<includepath>/usr/include/SDL2</includepath>
+<includepath>/usr/include/x86_64-linux-gnu</includepath>
+<includepath>/usr/lib/x86_64-linux-gnu/glib-2.0/include</includepath>
+
+</language>
+<language name="C Source File">
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu/target/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/aarch64-softmmu/trace</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel/stubs</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel/tcg</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/accel</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/audio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/authz</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/backends</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/block</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/capstone/include</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/chardev</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/crypto</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/disas</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/disas/libvixl</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/dtc/libfdt</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/dump</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/fpu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/fsdev</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/acpi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/audio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/block/dataplane</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/block</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/bt</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/char</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/core</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/cpu</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/display</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/i2c</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/ide</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/input</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/intc</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/ipack</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/misc</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net/can</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net/rocker</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/net</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/nvram</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci-bridge</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci-host</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pci</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/pcmcia</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/scsi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/sd</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/smbios</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/timer</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/tpm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/usb</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/vfio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/virtio</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/hw/watchdog</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/include</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/io</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/linux-headers</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/migration</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/monitor</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/nbd</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/net/can</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/net</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/qapi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/qom</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/replay</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/scsi</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/slirp/src</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/target/arm</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/tcg</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/tcg/i386</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/trace</includepath>
+<includepath workspace_path="true">/qemu-system-aarch64/src/no/ui</includepath>
+<includepath>/usr/include/glib-2.0</includepath>
+<includepath>/usr/include/libusb-1.0</includepath>
+<includepath>/usr/include/libxml2</includepath>
+<includepath>/usr/include/pixman-1</includepath>
+<includepath>/usr/include/SDL2</includepath>
+<includepath>/usr/include/x86_64-linux-gnu</includepath>
+<includepath>/usr/lib/x86_64-linux-gnu/glib-2.0/include</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+<macro>
+<name>PIE</name><value/>
+</macro>
+<macro>
+<name>NEED_CPU_H</name><value/>
+</macro>
+<macro>
+<name>_REENTRANT</name><value/>
+</macro>
+<macro>
+<name>_LARGEFILE_SOURCE</name><value/>
+</macro>
+<macro>
+<name>_GNU_SOURCE</name><value/>
+</macro>
+<macro>
+<name>_FORTIFY_SOURCE</name><value>2</value>
+</macro>
+<macro>
+<name>_FILE_OFFSET_BITS</name><value>64</value>
+</macro>
+<macro>
+<name>__STDC_LIMIT_MACROS</name><value/>
+</macro>
+<macro>
+<name>__STDC_FORMAT_MACROS</name><value/>
+</macro>
+<macro>
+<name>__STDC_CONSTANT_MACROS</name><value/>
+</macro>
+
+</language>
+<language name="C Source File">
+<macro>
+<name>NEED_CPU_H</name><value>1</value>
+</macro>
+<macro>
+<name>_REENTRANT</name><value>1</value>
+</macro>
+<macro>
+<name>_FORTIFY_SOURCE</name><value>2</value>
+</macro>
+<macro>
+<name>_LARGEFILE_SOURCE</name><value>1</value>
+</macro>
+<macro>
+<name>_FILE_OFFSET_BITS</name><value>64</value>
+</macro>
+<macro>
+<name>_GNU_SOURCE</name><value>1</value>
+</macro>
+<macro>
+<name>PIE</name><value>1</value>
+</macro>
+<macro>
+<name>__STDC_CONSTANT_MACROS</name><value/>
+</macro>
+<macro>
+<name>__STDC_FORMAT_MACROS</name><value/>
+</macro>
+<macro>
+<name>__STDC_LIMIT_MACROS</name><value/>
+</macro>
+<macro>
+<name>CONFIG_KVM_IS_POSSIBLE</name><value>1</value>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

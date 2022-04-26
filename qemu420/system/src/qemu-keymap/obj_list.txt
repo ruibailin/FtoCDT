@@ -1,0 +1,2 @@
+ui/input-keymap.o
+qemu-keymap.o

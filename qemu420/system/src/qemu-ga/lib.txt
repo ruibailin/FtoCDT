@@ -1,0 +1,7 @@
+rt
+glib-2.0
+gthread-2.0
+m
+udev
+pixman-1
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/dtc/libfdt

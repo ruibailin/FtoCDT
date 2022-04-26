@@ -1,0 +1,33 @@
+rt
+glib-2.0
+gthread-2.0
+m
+capstone
+fdt
+jpeg
+png16
+numa
+util
+pixman-1
+bz2
+curl
+xml2
+z
+X11
+SDL2
+pulse
+slirp
+usb-1.0
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/capstone
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/slirp
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/dtc/libfdt
+
+
+sudo apt-get install glib-2.0*
+sudo apt-get install libusb-1.0
+sudo apt-get install libxml2-dev
+sudo apt-get install pixman-1-0
+sudo apt-get install libsdl2-2.0-0
+sudo apt-get install libcurl4-gnutls-dev
+sudo apt-get install libbz2-dev
+sudo apt-get install libnuma-dev

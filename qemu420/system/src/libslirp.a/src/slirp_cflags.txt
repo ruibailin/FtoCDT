@@ -1,0 +1,35 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c complier:
+-DG_LOG_DOMAIN='"Slirp"' -D_FORTIFY_SOURCE=2 -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE=1 -DPIE=1 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include/ -I/usr/include/glib-2.0 -I/usr/include/pixman-1/ -I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/libcapstone.a/src/no/capstone/include" -I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/libfdt.a/src/no/dtc/libfdt" -I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/libslirp.a/src/no/slirp/src" -O0 -g -Wall -c -fmessage-length=0 -fPIC
+
+1.
+2.preprocessor
+
+3.includes
+/usr/lib/x86_64-linux-gnu/glib-2.0/include/
+/usr/include/glib-2.0
+/usr/include/pixman-1/
+"${workspace_loc:/capstone/src/no/capstone/include}"
+"${workspace_loc:/fdt/src/no/dtc/libfdt}"
+"${workspace_loc:/slirp/src/no/slirp/src}"
+
+4.
+5.
+6.
+7.
+8.Misc
+-c -fmessage-length=0
+	3(-fPIC):selected
+
+
+B. gcc c Linker
+gcc -shared
+
+1.
+2.Libraries
+2.1 lib
+2.2 path
+4.
+Shared: selected
+

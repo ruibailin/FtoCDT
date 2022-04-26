@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C Source File">
+<includepath workspace_path="true">/qemuutil/src/no/accel</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/accel/tcg</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/block/dataplane</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/vfio</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/riscv</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/target/riscv</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/trace</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/linux-headers</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/stubs</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/acpi</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/audio</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/block</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/char</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/core</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/display</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/i2c</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/ide</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/input</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/intc</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/misc</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/net</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/nvram</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/pci-host</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/pci</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/scsi</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/sd</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/timer</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/tpm</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/usb</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/</includepath>
+<includepath>/usr/include/libusb-1.0</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/virtio</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/hw/watchdog</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/migration</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/monitor</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/net</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/audio</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/ui</includepath>
+<includepath>/usr/include/SDL2</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/qom</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/authz</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/qapi</includepath>
+<includepath>/usr/include/libxml2</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/nbd</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/scsi</includepath>
+<includepath>/usr/include/x86_64-linux-gnu</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/block</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/chardev</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/crypto</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/io</includepath>
+<includepath>/usr/lib/x86_64-linux-gnu/glib-2.0/include</includepath>
+<includepath>/usr/include/glib-2.0</includepath>
+<includepath>/usr/include/pixman-1</includepath>
+<includepath workspace_path="true">/qemuutil/src/no/include</includepath>
+<includepath workspace_path="true">/qemuutil/src/no</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C Source File">
+<macro>
+<name>_FORTIFY_SOURCE</name><value>2</value>
+</macro>
+<macro>
+<name>_LARGEFILE_SOURCE</name><value>1</value>
+</macro>
+<macro>
+<name>_GNU_SOURCE</name><value>1</value>
+</macro>
+<macro>
+<name>PIE</name><value>1</value>
+</macro>
+<macro>
+<name>FILE_OFFSET_BITS</name><value>64</value>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

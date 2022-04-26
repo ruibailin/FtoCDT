@@ -1,0 +1,1 @@
+tests/qemu-iotests/socket_scm_helper.o

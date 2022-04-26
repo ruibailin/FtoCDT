@@ -1,0 +1,5 @@
+cp /home/steve/code/code/qemu/4_2_0/qemu-4.2.0/slirp/libslirp.a .
+cp /home/steve/code/code/qemu/4_2_0/qemu-4.2.0/libqemuutil.a .
+cp /home/steve/code/code/qemu/4_2_0/qemu-4.2.0/dtc/libfdt/libfdt.a .
+cp /home/steve/code/code/qemu/4_2_0/qemu-4.2.0/capstone/libcapstone.a .
+cp /home/steve/code/code/qemu/4_2_0/qemu-4.2.0/libvhost-user.a .

@@ -1,0 +1,46 @@
+Property->Setting->C/C++ Build->settings
+
+a. C++	Compilier
+
+1.
+2.
+
+3.
+
+4.
+5.
+6.
+7.Misc
+
+
+b. C Complier
+
+1
+2
+3.
+
+4.
+5
+6
+7
+
+8.Misc
+
+
+
+c. C++ Linker
+
+1.
+2. Libraries
+util
+rt
+m
+z
+glib-2.0
+gthread-2.0
+curl
+fdt
+
+"${workspace_loc:/fdt/Default}"
+
+

@@ -1,0 +1,150 @@
+Properties->c/c++ build->settings->Tool Settings
+A.gcc c++ complier:
+g++
+O0 -g -Wall -c -fmessage-length=0 -fPIE -pthread
+1.
+
+7.-c -fmessage-length=0
+
+B.gcc c complier:
+gcc
+-DNEED_CPU_H=1 -D_REENTRANT=1 -D_FORTIFY_SOURCE=2 -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE=1 -DPIE=1 -D__riscv_xlen=32 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/fpu -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel/stubs -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel/tcg -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/block/dataplane -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/vfio -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/riscv -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/target/riscv -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/trace -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/linux-headers -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/riscv32-softmmu -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/capstone/include -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/dtc/libfdt -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/stubs -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/backends -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/disas -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/dump -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/fsdev -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/acpi -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/audio -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/block -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/bt -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/char -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/core -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/cpu -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/display -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/i2c -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/ide -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/input -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/intc -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/ipack -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/misc -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net/rocker -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net/can -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/nvram -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci-bridge -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci-host -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pcmcia -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/scsi -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/sd -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/smbios -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/timer -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/tpm -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/usb -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/ -I/usr/include/libusb-1.0 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/virtio -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/watchdog -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/migration -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/monitor -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/slirp/src -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/net -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/net/can -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/replay -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/audio -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/ui -I/usr/include/SDL2 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/qom -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/authz -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/qapi -I/usr/include/libxml2 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/nbd -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/scsi -I/usr/include/x86_64-linux-gnu -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/block -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/chardev -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/crypto -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/io -I/usr/include/libpng16 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/include/pixman-1 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tests -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/include -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg/riscv -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/riscv32-softmmu/target/riscv -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg/i386 -O0 -g -Wall -c -fmessage-length=0   -fPIE -m64 -mcx16 -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -Wexpansion-to-defined -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -MMD -MP -MT -MF -fPIE -pthread
+
+1.
+2.preprocessor
+NEED_CPU_H=1
+_REENTRANT=1
+_FORTIFY_SOURCE=2
+_LARGEFILE_SOURCE=1
+_FILE_OFFSET_BITS=64
+_GNU_SOURCE=1
+PIE=1
+__riscv_xlen=32
+
+3.includes
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/fpu
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel/stubs
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/accel/tcg
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/block/dataplane
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/vfio
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/riscv
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/target/riscv
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/trace
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/linux-headers
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/riscv32-softmmu
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/capstone/include
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/dtc/libfdt
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/stubs
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/backends
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/disas
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/dump
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/fsdev
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/acpi
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/audio
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/block
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/bt
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/char
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/core
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/cpu
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/display
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/i2c
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/ide
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/input
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/intc
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/ipack
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/misc
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net/rocker
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/net/can
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/nvram
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci-bridge
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci-host
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pci
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/pcmcia
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/scsi
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/sd
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/smbios
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/timer
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/tpm
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/usb
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/
+/usr/include/libusb-1.0
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/virtio
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/hw/watchdog
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/migration
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/monitor
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/slirp/src
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/net
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/net/can
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/replay
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/audio
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/ui
+/usr/include/SDL2
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/qom
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/authz
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/qapi
+/usr/include/libxml2
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/nbd
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/scsi
+/usr/include/x86_64-linux-gnu
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/block
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/chardev
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/crypto
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/io
+/usr/include/libpng16
+/usr/lib/x86_64-linux-gnu/glib-2.0/include
+/usr/include/glib-2.0
+/usr/include/pixman-1
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tests
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/include
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg/riscv
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/riscv32-softmmu/target/riscv
+/home/steve/code/ruib/r_qemu_4_2_0/system/src/emulator/qumu/420/src/qemu-system-riscv32/src/no/tcg/i386
+4.
+5.
+6.
+7.
+-c -fmessage-length=0   -fPIE -m64 -mcx16 -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -MMD -MP -MT -MF 
+7.4:selected
+7.5:selected
+
+C. gcc c Linker
+g++
+-L/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/capstone -L/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/slirp -L/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/dtc/libfdt -L/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0 -g  -Wl,--warn-common -Wl,-z,relro -Wl,-z,now -pie -m64 -g   -pthread  -fPIE -DPIE  -mcx16 -Xlinker -L/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/dtc/libfdt  -I/usr/include/pixman-1 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/dtc/libfdt  -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fPIE -DPIE -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong  -I/usr/include/libpng16 -I/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/capstone/include  -I../linux-headers -iquote .. -iquote /home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/target/riscv -DNEED_CPU_H -iquote /home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu/4_2_0/qemu-4.2.0/include -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -g  -Wl,--warn-common -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread
+1.
+2.Libraries
+2.1 lib  //please notice the sequence of libs
+qemuutil
+capstone
+slirp
+fdt
+rt
+glib-2.0
+gthread-2.0
+m
+jpeg
+pixman-1
+bz2
+curl
+xml2
+z
+X11
+SDL2
+pulse
+usb-1.0
+util
+pthread
+png			
+numa		//if numa is selected
+2.2 path
+/usr/lib/x86_64-linux-gnu
+"${workspace_loc:/capstone/Default}"
+"${workspace_loc:/fdt/Default}"
+"${workspace_loc:/qemuutil/Default}"
+"${workspace_loc:/slirp/Default}"
+
+debug:
+qemu-system-riscv32 \
+-nographic -machine sifive_e -kernel  /mnt/code/qemu/test/riscv32/nuttx10-fe310

@@ -1,0 +1,55 @@
+Property->Setting->C/C++ Build->settings
+
+a. C++	Compilier
+
+1.
+2.
+
+3.
+
+4.
+5.
+6.
+7.Misc
+
+
+b. C Complier
+-D_FORTIFY_SOURCE=2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DPIE -I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/elf2dmp/src/no" -I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/elf2dmp/src/no/include" -I/usr/include/glib-2.0/ -I/usr/lib/x86_64-linux-gnu/glib-2.0/include/ -O0 -g -Wall -c -fmessage-length=0
+1
+2
+3.
+_FORTIFY_SOURCE=2
+_LARGEFILE_SOURCE
+_FILE_OFFSET_BITS=64
+_GNU_SOURCE
+PIE
+4.
+"${workspace_loc:/elf2dmp/src/no}"
+"${workspace_loc:/elf2dmp/src/no/include}"
+/usr/include/glib-2.0/
+/usr/lib/x86_64-linux-gnu/glib-2.0/include/
+
+5
+6
+7
+
+8.Misc
+-c -fmessage-length=0
+
+
+c. C++ Linker
+-L"/home/steve/code/ruib/r_qemu_4_2_0/system/src/libfdt.a/Default"
+1.
+2. Libraries
+util
+rt
+m
+z
+glib-2.0
+gthread-2.0
+curl
+fdt
+
+"${workspace_loc:/fdt/Default}"
+
+

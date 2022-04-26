@@ -1,0 +1,5 @@
+contrib/elf2dmp/qemu_elf.o
+contrib/elf2dmp/pdb.o
+contrib/elf2dmp/download.o
+contrib/elf2dmp/addrspace.o
+contrib/elf2dmp/main.o

@@ -1,0 +1,2 @@
+contrib/ivshmem-client/main.o
+contrib/ivshmem-client/ivshmem-client.o

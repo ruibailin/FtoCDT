@@ -1,0 +1,3 @@
+fsdev/9p-iov-marshal.o
+fsdev/9p-marshal.o
+fsdev/virtfs-proxy-helper.o

@@ -1,0 +1,30 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c complier:
+-I"/home/steve/code/ruib/r_qemu_4_2_0/system/src/libfdt.a/src/no/dtc/libfdt" -O0 -g3 -Wall -c -fmessage-length=0 -fPIC
+
+1.
+2.preprocessor
+
+3.includes
+"${workspace_loc:/fdt/src/no/dtc/libfdt}"
+
+4.
+5.
+6.
+7.
+8.Misc
+-c -fmessage-length=0
+	3(-fPIC):selected
+
+
+B. gcc c Linker
+gcc -shared
+
+1.
+2.Libraries
+2.1 lib
+2.2 path
+4.
+Shared: selected
+

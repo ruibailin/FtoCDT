@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+
+</language>
+<language name="C Source File">
+<includepath>/usr/include/glib-2.0/</includepath>
+<includepath>/usr/lib/x86_64-linux-gnu/glib-2.0/include/</includepath>
+<includepath workspace_path="true">/fdt/src/no/dtc/libfdt</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+
+</language>
+<language name="C Source File">
+<macro>
+<name>_FORTIFY_SOURCE</name><value>2</value>
+</macro>
+<macro>
+<name>_LARGEFILE_SOURCE</name><value/>
+</macro>
+<macro>
+<name>_FILE_OFFSET_BITS</name><value>64</value>
+</macro>
+<macro>
+<name>_GNU_SOURCE</name><value/>
+</macro>
+<macro>
+<name>PIE</name><value/>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

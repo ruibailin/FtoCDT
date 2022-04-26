@@ -1,0 +1,8 @@
+qga/qapi-generated/qga-qapi-commands.o
+qga/qapi-generated/qga-qapi-visit.o
+qga/qapi-generated/qga-qapi-types.o
+qga/channel-posix.o
+qga/commands-posix.o
+qga/main.o
+qga/guest-agent-command-state.o
+qga/commands.o

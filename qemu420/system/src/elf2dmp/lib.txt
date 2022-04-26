@@ -1,0 +1,10 @@
+util
+rt
+m
+z
+glib-2.0
+gthread-2.0
+curl
+fdt
+
+"${workspace_loc:/fdt/Default}"

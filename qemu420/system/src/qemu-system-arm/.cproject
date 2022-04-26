@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.380186094">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.380186094" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ProjName}" buildProperties="" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.toolchain.gnu.base.380186094" name="Default" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.enablement=null,org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.image=null,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=null" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.380186094.245776249" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.590641283" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.base.226415122" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-j4" autoBuildTarget="all" buildPath="${workspace_loc:/qemu-system-arm}/Default" cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.81187791" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="false" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.999543556" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.2007417326" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.1495031600" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.881298317" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel/stubs}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel/tcg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu/target/arm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu/trace}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/audio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/authz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/backends}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/block}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/capstone/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/chardev}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/crypto}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/disas}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/dtc/libfdt}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/dump}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/fpu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/fsdev}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/acpi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/audio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/block/dataplane}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/block}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/bt}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/char}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/cpu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/display}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/i2c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/ide}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/input}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/intc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/ipack}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/misc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net/can}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net/rocker}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/nvram}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci-bridge}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci-host}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pcmcia}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/scsi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/smbios}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/timer}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/tpm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/vfio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/virtio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/watchdog}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/linux-headers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/migration}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/monitor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/nbd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/net/can}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/net}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/qapi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/qom}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/replay}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/scsi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/slirp/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/target/arm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/tcg/i386}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/tcg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/trace}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/ui}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/include/glib-2.0"/>
+									<listOptionValue builtIn="false" value="/usr/include/libusb-1.0"/>
+									<listOptionValue builtIn="false" value="/usr/include/libxml2"/>
+									<listOptionValue builtIn="false" value="/usr/include/pixman-1"/>
+									<listOptionValue builtIn="false" value="/usr/include/SDL2"/>
+									<listOptionValue builtIn="false" value="/usr/include/x86_64-linux-gnu"/>
+									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/disas/libvixl}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.preprocessor.def.294189996" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PIE"/>
+									<listOptionValue builtIn="false" value="NEED_CPU_H"/>
+									<listOptionValue builtIn="false" value="_REENTRANT"/>
+									<listOptionValue builtIn="false" value="_LARGEFILE_SOURCE"/>
+									<listOptionValue builtIn="false" value="_GNU_SOURCE"/>
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_FILE_OFFSET_BITS=64"/>
+									<listOptionValue builtIn="false" value="__STDC_LIMIT_MACROS"/>
+									<listOptionValue builtIn="false" value="__STDC_FORMAT_MACROS"/>
+									<listOptionValue builtIn="false" value="__STDC_CONSTANT_MACROS"/>
+									<listOptionValue builtIn="false" value="HAVE_COPY_FILE_RANGE"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.1371795554" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0   -fPIE -m64 -mcx16 -Wredundant-decls -Wall -Wundef -Wwrite-strings -fno-strict-aliasing -fno-common -fwrapv -Wendif-labels -Wno-missing-include-dirs -Wempty-body  -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers  -Wtype-limits -fstack-protector-strong -MMD -MP -MT -MF  -std=c++11" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.other.pic.1893278940" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.pthread.276849416" name="Support for pthread (-pthread)" superClass="gnu.cpp.compiler.option.pthread" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.688915144" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.968217458" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.82623969" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel/stubs}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel/tcg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/accel}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu/target/arm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/arm-softmmu/trace}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/audio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/authz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/backends}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/block}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/capstone/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/chardev}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/crypto}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/disas}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/dtc/libfdt}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/dump}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/fpu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/fsdev}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/acpi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/audio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/block/dataplane}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/block}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/bt}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/char}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/cpu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/display}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/i2c}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/ide}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/input}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/intc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/ipack}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/misc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net/can}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net/rocker}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/net}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/nvram}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci-bridge}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci-host}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pci}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/pcmcia}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/scsi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/smbios}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/timer}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/tpm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/vfio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/virtio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/hw/watchdog}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/linux-headers}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/migration}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/monitor}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/nbd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/net/can}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/net}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/qapi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/qom}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/replay}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/scsi}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/slirp/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/target/arm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/tcg/i386}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/tcg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/trace}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/ui}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/include/glib-2.0"/>
+									<listOptionValue builtIn="false" value="/usr/include/libusb-1.0"/>
+									<listOptionValue builtIn="false" value="/usr/include/libxml2"/>
+									<listOptionValue builtIn="false" value="/usr/include/pixman-1"/>
+									<listOptionValue builtIn="false" value="/usr/include/SDL2"/>
+									<listOptionValue builtIn="false" value="/usr/include/x86_64-linux-gnu"/>
+									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemu-system-arm/src/no/disas/libvixl}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.1730646858" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NEED_CPU_H=1"/>
+									<listOptionValue builtIn="false" value="_REENTRANT=1"/>
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_LARGEFILE_SOURCE=1"/>
+									<listOptionValue builtIn="false" value="_FILE_OFFSET_BITS=64"/>
+									<listOptionValue builtIn="false" value="_GNU_SOURCE=1"/>
+									<listOptionValue builtIn="false" value="PIE=1"/>
+									<listOptionValue builtIn="false" value="__STDC_LIMIT_MACROS"/>
+									<listOptionValue builtIn="false" value="__STDC_FORMAT_MACROS"/>
+									<listOptionValue builtIn="false" value="__STDC_CONSTANT_MACROS"/>
+									<listOptionValue builtIn="false" value="CONFIG_KVM_IS_POSSIBLE=1"/>
+									<listOptionValue builtIn="false" value="HAVE_COPY_FILE_RANGE"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1944539126" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0   -fPIE -m64 -mcx16 -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -Wendif-labels -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -MMD -MP -MT -MF&#10;" valueType="string"/>
+								<option id="gnu.c.compiler.option.pthread.2135542442" name="Support for pthread (-pthread)" superClass="gnu.c.compiler.option.pthread" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.misc.pic.1446426207" name="Position Independent Code (-fPIC)" superClass="gnu.c.compiler.option.misc.pic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.893150025" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1331576352" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.717395338" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.link.option.other.133784830" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.link.option.userobjs.1373632061" name="Other objects" superClass="gnu.cpp.link.option.userobjs" valueType="userObjs"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.paths.659013564" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/lib/x86_64-linux-gnu"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/capstone/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fdt/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemuutil/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/slirp/Default}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.317806523" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="rt"/>
+									<listOptionValue builtIn="false" value="glib-2.0"/>
+									<listOptionValue builtIn="false" value="gthread-2.0"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="capstone"/>
+									<listOptionValue builtIn="false" value="fdt"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="numa"/>
+									<listOptionValue builtIn="false" value="qemuutil"/>
+									<listOptionValue builtIn="false" value="util"/>
+									<listOptionValue builtIn="false" value="pixman-1"/>
+									<listOptionValue builtIn="false" value="bz2"/>
+									<listOptionValue builtIn="false" value="curl"/>
+									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="X11"/>
+									<listOptionValue builtIn="false" value="SDL2"/>
+									<listOptionValue builtIn="false" value="pulse"/>
+									<listOptionValue builtIn="false" value="slirp"/>
+									<listOptionValue builtIn="false" value="usb-1.0"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="atomic"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1446340107" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1068915772" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1733655443" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="qemu-system-arm.null.361283643" name="qemu-system-arm"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/qemu-system-arm"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1415934113;cdt.managedbuild.toolchain.gnu.base.1415934113.1250378946;cdt.managedbuild.tool.gnu.c.compiler.base.217367093;cdt.managedbuild.tool.gnu.c.compiler.input.902638743">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.380186094;cdt.managedbuild.toolchain.gnu.base.380186094.245776249;cdt.managedbuild.tool.gnu.c.compiler.base.968217458;cdt.managedbuild.tool.gnu.c.compiler.input.893150025">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1415934113;cdt.managedbuild.toolchain.gnu.base.1415934113.1250378946;cdt.managedbuild.tool.gnu.cpp.compiler.base.462505679;cdt.managedbuild.tool.gnu.cpp.compiler.input.879903121">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1857946278;cdt.managedbuild.toolchain.gnu.base.1857946278.1578124364;cdt.managedbuild.tool.gnu.c.compiler.base.1726008272;cdt.managedbuild.tool.gnu.c.compiler.input.952609642">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.380186094;cdt.managedbuild.toolchain.gnu.base.380186094.245776249;cdt.managedbuild.tool.gnu.cpp.compiler.base.2007417326;cdt.managedbuild.tool.gnu.cpp.compiler.input.688915144">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

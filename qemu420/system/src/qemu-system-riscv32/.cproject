@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.602273498">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.602273498" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.base.602273498" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.602273498.1206458599" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.431750859" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.2095514116" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/qemu-system-riscv32}/Default" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.1908406048" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="false" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.710585030" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.714606283" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.179480848" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.388435083" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/tcg"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/fpu"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/accel"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/accel/stubs"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/accel/tcg"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/block/dataplane"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/vfio"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/riscv"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/target/riscv"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/trace"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/linux-headers"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/riscv32-softmmu"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/capstone/include"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/dtc/libfdt"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/stubs"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/backends"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/disas"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/dump"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/fsdev"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/acpi"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/audio"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/block"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/bt"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/char"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/core"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/cpu"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/display"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/i2c"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/ide"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/input"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/intc"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/ipack"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/misc"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/net"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/net/rocker"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/net/can"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/nvram"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/pci-bridge"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/pci-host"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/pci"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/pcmcia"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/scsi"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/sd"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/smbios"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/timer"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/tpm"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/usb"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/"/>
+									<listOptionValue builtIn="false" value="/usr/include/libusb-1.0"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/virtio"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/hw/watchdog"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/migration"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/monitor"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/slirp/src"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/net"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/net/can"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/replay"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/audio"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/ui"/>
+									<listOptionValue builtIn="false" value="/usr/include/SDL2"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/qom"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/authz"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/qapi"/>
+									<listOptionValue builtIn="false" value="/usr/include/libxml2"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/nbd"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/scsi"/>
+									<listOptionValue builtIn="false" value="/usr/include/x86_64-linux-gnu"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/block"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/chardev"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/crypto"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/io"/>
+									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+									<listOptionValue builtIn="false" value="/usr/include/glib-2.0"/>
+									<listOptionValue builtIn="false" value="/usr/include/pixman-1"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/tests"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/include"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/tcg/riscv"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/riscv32-softmmu/target/riscv"/>
+									<listOptionValue builtIn="false" value="/home/steve/code/ruib/r_qemu_4_2_0/system/src/qemu-system-riscv32/src/no/tcg/i386"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1747101110" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NEED_CPU_H=1"/>
+									<listOptionValue builtIn="false" value="_REENTRANT=1"/>
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_LARGEFILE_SOURCE=1"/>
+									<listOptionValue builtIn="false" value="_FILE_OFFSET_BITS=64"/>
+									<listOptionValue builtIn="false" value="_GNU_SOURCE=1"/>
+									<listOptionValue builtIn="false" value="PIE=1"/>
+									<listOptionValue builtIn="false" value="__riscv_xlen=32"/>
+								</option>
+								<option id="gnu.c.compiler.option.dialect.std.148883691" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.optimization.level.1279997183" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.63979933" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0   -fPIE -m64 -mcx16 -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv -std=gnu99  -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong -MMD -MP -MT -MF " valueType="string"/>
+								<option id="gnu.c.compiler.option.misc.pic.7732788" name="Position Independent Code (-fPIC)" superClass="gnu.c.compiler.option.misc.pic" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1281214900" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1162899641" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base">
+								<option id="gnu.c.link.option.paths.1770091213" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/capstone/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/fdt/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/qemuutil/Default}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/slirp/Default}&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.libs.1141045475" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="qemuutil"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="capstone"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="slirp"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="fdt"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="rt"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="glib-2.0"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="gthread-2.0"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="m"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="jpeg"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pixman-1"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="bz2"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="curl"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="xml2"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="z"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="X11"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="SDL2"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pulse"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="usb-1.0"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="util"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pthread"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="png"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="numa"/>
+								</option>
+								<option id="gnu.c.link.option.shared.240758569" name="Shared (-shared)" superClass="gnu.c.link.option.shared" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.682472949" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1020351361" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.315350540" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.94915446" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="qemu-system-riscv32.null.2007426457" name="qemu-system-riscv32"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/qemu-system-riscv32"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.602273498;cdt.managedbuild.toolchain.gnu.base.602273498.1206458599;cdt.managedbuild.tool.gnu.c.compiler.base.179480848;cdt.managedbuild.tool.gnu.c.compiler.input.1281214900">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
