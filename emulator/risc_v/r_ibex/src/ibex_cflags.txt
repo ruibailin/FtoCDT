@@ -1,0 +1,41 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c++ complier:
+1.
+2.preprocessor
+TOP_MODULE=ibex_simple_system
+VM_TRACE_FMT_FST
+TOPLEVEL_NAME=ibex_simple_system
+VM_COVERAGE=0
+VM_SC=0
+VM_TRACE=1
+VM_TRACE_FST=1
+3.includes
+/home/steve/code/code/sonicboom/verilator/include
+/home/steve/code/code/sonicboom/verilator/include/vltstd
+"${workspace_loc:/c_ibex/src/sim-verilator}"
+"${workspace_loc:/c_ibex/src/src/lowrisc_dv_verilator_ibex_pcounts_0/cpp}"
+"${workspace_loc:/c_ibex/src/src/lowrisc_dv_verilator_memutil_dpi_0/cpp}"
+"${workspace_loc:/c_ibex/src/src/lowrisc_dv_verilator_memutil_verilator_0/cpp}"
+"${workspace_loc:/c_ibex/src/src/lowrisc_dv_verilator_simutil_verilator_0/cpp}"
+4.
+5.
+6.
+7.
+-c -fmessage-length=0 -std=c++11 -std=gnu++14 
+
+C. gcc c++ Linker
+1.
+2.Libraries
+util
+z
+elf
+pthread
+
+How tp generate source file:
+
+1.cp -r /home/steve/code/code/emulator/risc_v/o_ibex/ibex/build/lowrisc_ibex_ibex_simple_system_0/. /home/steve/code/code/emulator/risc_v/r_ibex/src/
+2.mkdir /home/steve/code/code/emulator/risc_v/r_ibex/src/verilated
+3.cp /home/steve/code/code/sonicboom/verilator/include/verilated.cpp /home/steve/code/code/emulator/risc_v/r_ibex/src/verilated/
+  cp /home/steve/code/code/sonicboom/verilator/include/verilated_dpi.cpp /home/steve/code/code/emulator/risc_v/r_ibex/src/verilated/
+  cp /home/steve/code/code/sonicboom/verilator/include/verilated_fst_c.cpp /home/steve/code/code/emulator/risc_v/r_ibex/src/verilated/

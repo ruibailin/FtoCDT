@@ -1,0 +1,125 @@
+1.compile
+cd /home/steve/code/code/qemu/arm32/o_Cortex-M/
+make
+/usr/bin/ld: cannot find -lreadline
+
+2. download readline
+
+https://packages.ubuntu.com/bionic/amd64/libreadline-dev/download
+
+libreadline-dev_7.0-3_amd64.deb
+
+3. compile again
+/usr/bin/ld: src/elf.dbg.o: relocation R_X86_64_32 against `.rodata' can not be used when making a PIE object; recompile with -fPIC
+/usr/bin/ld: final link failed: Nonrepresentable section on output
+collect2: error: ld returned 1 exit status
+Makefile:46: recipe for target 'debug' failed
+make: *** [debug] Error 1
+
+make clean
+make debug
+
+`which gcc` src/elf.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/elf.dbg.o
+`which gcc` src/relocation.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/relocation.dbg.o
+src/relocation.c: In function ‘reloc_segment’:
+src/relocation.c:41:18: warning: unused variable ‘j’ [-Wunused-variable]
+       int i = 0, j = 0;
+                  ^
+`which gcc` src/emul_main.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/emul_main.dbg.o
+`which gcc` src/instructions.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/instructions.dbg.o
+`which gcc` src/parsing.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/parsing.dbg.o
+`which gcc` src/syms.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/syms.dbg.o
+`which gcc` src/disassembly.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/disassembly.dbg.o
+`which gcc` src/memory.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/memory.dbg.o
+src/memory.c: In function ‘read_memory_value’:
+src/memory.c:58:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+   byte value = NULL; 
+                ^~~~
+`which gcc` src/functions.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/functions.dbg.o
+src/functions.c: In function ‘resumecmd’:
+src/functions.c:77:17: warning: statement with no effect [-Wunused-value]
+     inter->mode == SCRIPT;
+     ~~~~~~~~~~~~^~~~~~~~~
+src/functions.c: In function ‘dispcmd’:
+src/functions.c:154:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       if((token = get_next_token(inter) == NULL)) return 0;
+                 ^
+src/functions.c: In function ‘runcmd’:
+src/functions.c:545:10: warning: unused variable ‘address’ [-Wunused-variable]
+   size_t address;
+          ^~~~~~~
+`which gcc` src/interpreter.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/interpreter.dbg.o
+`which gcc` src/run.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/run.dbg.o
+`which gcc` src/section.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/section.dbg.o
+`which gcc` src/bits.c -Wall -Iinclude -g -DDEBUG -DVERBOSE -c -o src/bits.dbg.o
+`which gcc` src/elf.dbg.o src/relocation.dbg.o src/emul_main.dbg.o src/instructions.dbg.o src/parsing.dbg.o src/syms.dbg.o src/disassembly.dbg.o src/memory.dbg.o src/functions.dbg.o src/interpreter.dbg.o src/run.dbg.o src/section.dbg.o src/bits.dbg.o -lreadline -lm -lcurses -o emul-arm
+
+
+
+4. test
+../testing/simpleUnitTest.sh -e ./emul-arm test/exit/*.emu
+../testing/simpleUnitTest.sh -e ./emul-arm test/exit/test_exit_OK.emu
+
+cd /home/steve/code/code/qemu/arm32/o_Cortex-M/
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc \
+-mcpu=cortex-m3 -c -o pile.o  pile.s
+
+./emul-arm 
+ARMShell : > load pile.o
+[ DEBUG :: src/interpreter.c:acquire_line:144] Ligne acquise 'load pile.o'
+.
+[ DEBUG :: src/interpreter.c:execute_cmd:41] input 'load pile.o'.
+[WARNING:: src/memory.c:load:221] 
+ LOAD.
+
+***** Processing section named .text
+
+ section .text loaded at 3000 :
+
+  0x00003000 4f f0 00 00 4f f0 08 01 0a 46 00 eb 41 01 00 f0 
+  0x00003010 03 f8 8a 42 08 d0 0a e0 01 b5 4f f0 00 00 00 eb 
+  0x00003020 51 01 bd e8 01 40 70 47 4f f0 00 00 00 df 4f f0 
+  0x00003030 01 00 00 df 
+
+***** Processing section named .rodata
+[ DEBUG :: src/memory.c:load:273] section .rodata not present in the elf file.
+
+***** Processing section named .data
+
+ section .data loaded at 4000 :
+
+  0x00004000 59 6f 75 70 69 
+
+***** Processing section named .bss
+
+ section .bss loaded at 5000 :
+
+
+------ Fichier ELF "pile.o" : sections lues lors du chargement ------
+Symbol table has 10 syms:
+Symbol            .text (0    bytes @ 0x00000000): section
+Symbol            .data (0    bytes @ 0x00000000): section
+Symbol             .bss (0    bytes @ 0x00000000): section
+Symbol               $t (0    bytes @ 0x00000000): no type
+Symbol        procedure (0    bytes @ 0x00000018): no type
+Symbol               OK (0    bytes @ 0x00000028): no type
+Symbol               KO (0    bytes @ 0x0000002e): no type
+Symbol           chaine (0    bytes @ 0x00000000): no type
+Symbol  .ARM.attributes (0    bytes @ 0x00000000): section
+Symbol           _start (0    bytes @ 0x00000000): no type
+
+
+ARMShell : > step
+[ DEBUG :: src/interpreter.c:acquire_line:144] Ligne acquise 'step'
+.
+[ DEBUG :: src/interpreter.c:execute_cmd:41] input 'step'.
+[ DEBUG :: src/functions.c:stepcmd:562] Chaine : step.
+[ DEBUG :: src/run.c:run:56] Instruction : MOV_Imm_T2.
+
+disasm 0x3000:0x4000
+run
+disp reg all
+exit
+
+

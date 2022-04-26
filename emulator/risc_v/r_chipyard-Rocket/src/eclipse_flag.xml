@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+<includepath>/home/steve/code/code/sonicboom/verilator/include</includepath>
+<includepath>/home/steve/code/code/sonicboom/chipyard/riscv-tools-install/include</includepath>
+<includepath>/home/steve/code/code/sonicboom/chipyard/tools/DRAMSim2</includepath>
+<includepath>/home/steve/code/code/sonicboom/verilator/include/vltstd</includepath>
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+<macro>
+<name>VERILATOR</name><value/>
+</macro>
+<macro>
+<name>TEST_HARNESS</name><value>VTestHarness</value>
+</macro>
+<macro>
+<name>VM_C11</name><value>1</value>
+</macro>
+<macro>
+<name>VM_COVERAGE</name><value>0</value>
+</macro>
+<macro>
+<name>VM_PARALLEL_BUILDS</name><value>1</value>
+</macro>
+<macro>
+<name>VM_THREADS</name><value>0</value>
+</macro>
+<macro>
+<name>VM_TRACE</name><value>0</value>
+</macro>
+<macro>
+<name>VM_TRACE_FST</name><value>0</value>
+</macro>
+<macro>
+<name>VM_TRACE_THREADS</name><value>0</value>
+</macro>
+<macro>
+<name>VM_TRACE_FST_WRITER_THREAD</name><value>0</value>
+</macro>
+<macro>
+<name>VM_PREFIX</name><value>VTestHarness</value>
+</macro>
+<macro>
+<name>VM_MODPREFIX</name><value>VTestHarness</value>
+</macro>
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

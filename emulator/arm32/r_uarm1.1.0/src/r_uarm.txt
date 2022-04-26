@@ -1,0 +1,35 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c++ complier:
+1.
+2.preprocessor
+UARM_MACHINE_COMPILING
+QT_WIDGETS_LIB
+QT_GUI_LIB
+QT_CORE_LIB
+_REENTRANT
+
+3.includes
+"${workspace_loc:/r_uarm1.1.0/src/no}"
+"${workspace_loc:/r_uarm1.1.0/src/no/services}"
+"${workspace_loc:/r_uarm1.1.0/src/no/armProc}"
+"${workspace_loc:/r_uarm1.1.0/src/no/qarm}"
+/usr/include/x86_64-linux-gnu/qt5
+/usr/include/x86_64-linux-gnu/qt5/QtCore
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets
+/usr/include/x86_64-linux-gnu/qt5/QtGui
+4.
+5.
+6.
+7.
+-c -fmessage-length=0  -fPIC -pipe -std=c++11
+
+C. gcc c++ Linker
+1.
+2.Libraries
+dl
+Qt5Widgets
+Qt5Gui
+Qt5Core
+GL
+pthread

@@ -1,0 +1,427 @@
+https://github.com/mellotanica/uARM/releases/tag/v1.1.0
+
+steve@D7010:~/code/code/emulator/arm/uARM$ ./configure
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for main in -lQtCore... no
+checking for main in -lQtGui... no
+checking for main in -lelf... yes
+checking for main in -lpthread... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for unistd.h... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for mode_t... yes
+checking for size_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for memset... yes
+checking for strerror... yes
+checking for strtol... yes
+checking for strtoul... yes
+configure: creating ./config.status
+config.status: creating config.h
+steve@D7010:~/code/code/emulator/arm/uARM$ make
+make: *** No targets specified and no makefile found.  Stop.
+steve@D7010:~/code/code/emulator/arm/uARM$ ./compile
+Compiler command: "qtchooser -run-tool=qmake -qt=5 "
+
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for main in -lQtCore... no
+checking for main in -lQtGui... no
+checking for main in -lelf... yes
+checking for main in -lpthread... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for unistd.h... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for mode_t... yes
+checking for size_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for memset... yes
+checking for strerror... yes
+checking for strtol... yes
+checking for strtoul... yes
+configure: creating ./config.status
+config.status: creating config.h
+config.status: config.h is unchanged
+Compiling uarm....
+
+Info: creating stash file /home/steve/code/code/emulator/arm/uARM/uarm-build/.qmake.stash
+compiling ../armProc/ARMisa.cc
+compiling ../armProc/blockdev.cc
+compiling ../armProc/bus.cc
+compiling ../armProc/cp15.cc
+compiling ../armProc/device.cc
+compiling ../armProc/event.cc
+compiling ../armProc/machine.cc
+compiling ../armProc/machine_config.cc
+compiling ../armProc/mpic.cc
+compiling ../armProc/processor.cc
+../armProc/processor.cc: In member function ‘void processor::coprocessorOperation()’:
+../armProc/processor.cc:830:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             getTLB(index, coproc->getRegister(CP15_REG2_EntryHi), coproc->getRegister(CP15_REG2_EntryLo));
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/processor.cc:831:9: note: here
+         case OP_TLBP: /* CDP p15, #TLBP, c10, c2, c0, #0 */
+         ^~~~
+../armProc/processor.cc: In member function ‘void processor::dataProcessing(Byte)’:
+../armProc/processor.cc:1455:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    dest = &alu_tmp;
+    ~~~~~^~~~~~~~~~
+../armProc/processor.cc:1456:3: note: here
+   case 0:  //AND
+   ^~~~
+../armProc/processor.cc:1462:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    dest = &alu_tmp;
+    ~~~~~^~~~~~~~~~
+../armProc/processor.cc:1463:3: note: here
+   case 1:  //EOR
+   ^~~~
+../armProc/processor.cc:1469:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    dest = &alu_tmp;
+    ~~~~~^~~~~~~~~~
+../armProc/processor.cc:1470:3: note: here
+   case 2:  //SUB
+   ^~~~
+../armProc/processor.cc:1478:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    dest = &alu_tmp;
+    ~~~~~^~~~~~~~~~
+../armProc/processor.cc:1479:3: note: here
+   case 4:  //ADD
+   ^~~~
+../armProc/processor.cc:1496:8: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    op2 = INVERT_W(op2);
+../armProc/processor.cc:1497:3: note: here
+   case 13: //MOV
+   ^~~~
+../armProc/processor.cc: In member function ‘void processor::dataPsum(Word, Word, bool, bool, Word*, bool)’:
+../armProc/processor.cc:1520:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                 *dest |= (1 << i);
+                 ~~~~~~^~~~~~~~~~~
+../armProc/processor.cc:1521:13: note: here
+             case 0:
+             ^~~~
+../armProc/processor.cc:1525:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                 *dest |= (1 << i);
+                 ~~~~~~^~~~~~~~~~~
+../armProc/processor.cc:1526:13: note: here
+             case 2:
+             ^~~~
+compiling ../armProc/stoppoint.cc
+compiling ../armProc/Thumbisa.cc
+../armProc/Thumbisa.cc: In member function ‘void Thumbisa::ADDH(HalfWord)’:
+../armProc/Thumbisa.cc:118:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)(instr >> 3) & 7);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:119:9: note: here
+         case 3: //h1&h2
+         ^~~~
+../armProc/Thumbisa.cc:121:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)((instr >> 3) & 7) + 8);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:122:9: note: here
+         default:
+         ^~~~~~~
+../armProc/Thumbisa.cc: In member function ‘void Thumbisa::BX(HalfWord)’:
+../armProc/Thumbisa.cc:233:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)((instr >> 3) & 7) + 8);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:234:9: note: here
+         default:
+         ^~~~~~~
+../armProc/Thumbisa.cc: In member function ‘void Thumbisa::CMPH(HalfWord)’:
+../armProc/Thumbisa.cc:264:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)(instr >> 3) & 7);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:265:9: note: here
+         case 3: //h1&h2
+         ^~~~
+../armProc/Thumbisa.cc:267:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)((instr >> 3) & 7) + 8);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:268:9: note: here
+         default:
+         ^~~~~~~
+../armProc/Thumbisa.cc: In member function ‘void Thumbisa::MOVH(HalfWord)’:
+../armProc/Thumbisa.cc:430:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)(instr >> 3) & 7);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:431:9: note: here
+         case 3: //h1&h2
+         ^~~~
+../armProc/Thumbisa.cc:433:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             rs = p->getVisibleRegister((Byte)((instr >> 3) & 7) + 8);
+             ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../armProc/Thumbisa.cc:434:9: note: here
+         default:
+         ^~~~~~~
+compiling ../armProc/time_stamp.cc
+compiling ../armProc/tlbentry.cpp
+compiling ../armProc/vde_network.cc
+compiling ../qarm/add_breakpoint_dialog.cc
+compiling ../qarm/address_line_edit.cc
+compiling ../qarm/breakpoint_window.cc
+compiling ../qarm/flat_push_button.cc
+compiling ../qarm/hex_view.cc
+compiling ../qarm/mac_id_edit.cc
+compiling ../qarm/machine_config_dialog.cc
+compiling ../qarm/main.cc
+compiling ../qarm/mainbar.cc
+compiling ../qarm/procdisplay.cc
+compiling ../qarm/qarm.cc
+compiling ../qarm/qarmmessagebox.cpp
+compiling ../qarm/ramview.cc
+compiling ../qarm/register_item_delegate.cc
+compiling ../qarm/select_structures_dialog.cc
+compiling ../qarm/stoppoint_list_model.cc
+compiling ../qarm/structures_window.cc
+compiling ../qarm/symbol_table_model.cc
+compiling ../qarm/terminal_view.cc
+compiling ../qarm/terminal_window.cc
+compiling ../qarm/tlb_model.cc
+compiling ../qarm/tlb_window.cc
+compiling ../qarm/ui_utils.cc
+compiling ../services/debug.cc
+compiling ../services/debug_session.cc
+compiling ../services/disass.c
+compiling ../services/elf2arm.cc
+compiling ../services/error.cc
+compiling ../services/json.cc
+compiling ../services/symbol_table.cc
+compiling ../services/utility.cc
+generating ./moc_predefs.h
+moc ../armProc/device.h
+compiling moc_device.cpp
+moc ../armProc/machine.h
+compiling moc_machine.cpp
+moc ../armProc/stoppoint.h
+compiling moc_stoppoint.cpp
+moc ../qarm/add_breakpoint_dialog.h
+compiling moc_add_breakpoint_dialog.cpp
+moc ../qarm/address_line_edit.h
+compiling moc_address_line_edit.cpp
+moc ../qarm/breakpoint_window.h
+compiling moc_breakpoint_window.cpp
+moc ../qarm/flat_push_button.h
+compiling moc_flat_push_button.cpp
+moc ../qarm/hex_view.h
+compiling moc_hex_view.cpp
+moc ../qarm/hex_view_priv.h
+compiling moc_hex_view_priv.cpp
+moc ../qarm/mainbar.h
+compiling moc_mainbar.cpp
+moc ../qarm/machine_config_dialog.h
+compiling moc_machine_config_dialog.cpp
+moc ../qarm/machine_config_dialog_priv.h
+compiling moc_machine_config_dialog_priv.cpp
+moc ../qarm/procdisplay.h
+compiling moc_procdisplay.cpp
+moc ../qarm/qarm.h
+compiling moc_qarm.cpp
+moc ../qarm/ramview.h
+compiling moc_ramview.cpp
+moc ../qarm/select_structures_dialog.h
+compiling moc_select_structures_dialog.cpp
+moc ../qarm/stoppoint_list_model.h
+compiling moc_stoppoint_list_model.cpp
+moc ../qarm/structures_window.h
+compiling moc_structures_window.cpp
+moc ../qarm/symbol_table_model.h
+compiling moc_symbol_table_model.cpp
+moc ../qarm/terminal_view.h
+compiling moc_terminal_view.cpp
+moc ../qarm/terminal_window.h
+compiling moc_terminal_window.cpp
+moc ../qarm/terminal_window_priv.h
+compiling moc_terminal_window_priv.cpp
+moc ../qarm/tlb_model.h
+compiling moc_tlb_model.cpp
+moc ../qarm/tlb_window.h
+compiling moc_tlb_window.cpp
+moc ../services/debug.h
+compiling moc_debug.cpp
+moc ../services/debug_session.h
+compiling moc_debug_session.cpp
+linking uarm
+Compiling uarm-mkdev....
+
+Info: creating stash file /home/steve/code/code/emulator/arm/uARM/uarm-mkdev-build/.qmake.stash
+compiling ../services/mkdev.cc
+compiling ../services/elf2arm.cc
+linking uarm-mkdev
+steve@D7010:~/code/code/emulator/arm/uARM$ ./uarm-mkdev
+./uarm-mkdev syntax : ./uarm-mkdev {-d | -t} [parameters..]
+
+./uarm-mkdev -d <diskfile.uarm> [cyl [head [sect [rpm [seekt [datas]]]]]]
+
+where:
+
+cyl = no. of cylinders		[1..65535]	(default = 32)
+head = no. of heads		[1..255]	(default = 2)
+sect = no. of sectors		[1..255]	(default = 8)
+
+rpm = disk rotations per min.		[360..10800]	(default = 3600)
+seekt = avg. cyl2cyl time (microsecs.)	[1..10000]	(default = 100)
+datas = sector data occupation %	[10%..90%]	(default = 80%)
+
+<diskfile> = disk image file name		(default = disk0.uarm)
+
+
+./uarm-mkdev -t <tapefile.uarm> <file> [file]...
+
+where:
+
+<tapefile.uarm> = tape image file name
+
+steve@D7010:~/code/code/emulator/arm/uARM$ /uarm
+bash: /uarm: No such file or directory
+steve@D7010:~/code/code/emulator/arm/uARM$ ./uarm
+
+steve@D7010:~/code/code/emulator/arm32/o_uARM$ chmod +x install.sh 
+steve@D7010:~/code/code/emulator/arm32/o_uARM$ sudo ./install.sh 
+steve@D7010:~/code/code/emulator/arm32/o_uARM$ ls /usr/include/uarm
+arch.h        crti.o   decompileBios  libuarm.h    uARMtypes.h
+BIOS          crti.s   ldscripts      libuarm.o    ulibuarm.h
+bios_const.h  crtso.o  libdiv.o       libuarm.s    ulibuarm.o
+BIOS.s        crtso.s  libdiv.s       uARMconst.h  ulibuarm.s
+
+2. make hellotest.c
+steve@D7010:~/code/code/emulator/arm32/o_uARM/test$ cp /usr/share/doc/uarm/examples/helloWorld.c .
+steve@D7010:~/code/code/emulator/arm32/o_uARM/test$ cp /usr/include/uarm/ldscripts/elf32ltsarm.h.uarmcore.x .
+//Modify elf32ltsarm.h.uarmcore.x
+SEARCH_DIR("=/usr/local/lib/arm-linux-gnueabihf"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib/arm-linux-gnueabihf"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib/arm-linux-gnueabihf"); SEARCH_DIR("=/usr/lib");
+-->
+SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/local/lib/arm-poky-linux-gnueabi"); SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/local/lib"); SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/lib/arm-poky-linux-gnueabi"); SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/lib"); SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/lib/arm-porky-linux-gnueabi"); SEARCH_DIR("=/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/lib");
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/lib
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc \
+-mcpu=arm7tdmi -c -o helloworld.o  helloworld.c
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ld \
+   -T elf32ltsarm.h.uarmcore.x \
+   -o helloworld /usr/include/uarm/crtso.o \
+   /usr/include/uarm/libuarm.o helloworld.o
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find Scrt1.o: No such file or directory
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find crti.o: No such file or directory
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find crtbeginS.o: No such file or directory
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find -lgcc
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find -lgcc_s
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find -lc
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find -lgcc
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find -lgcc_s
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find crtendS.o: No such file or directory
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+cp /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/*.o .
+cp /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/8.2.0/*.o .
+
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ld \
+   -L/home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/lib/ \
+   -L/home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/ \
+   -L/home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/8.2.0/\
+   -T elf32ltsarm.h.uarmcore.x \
+   -Map=helloworld.map \
+   -o helloworld /usr/include/uarm/crtso.o \
+   /usr/include/uarm/libuarm.o helloworld.o
+
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find /lib/libc.so.6
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find /usr/lib/libc_nonshared.a
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/8.2.0/real-ld: cannot find /lib/ld-linux.so.3
+
+sudo ln -s /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/lib/libc.so.6  /lib/libc.so.6
+sudo ln -s /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/libc_nonshared.a  /usr/lib/libc_nonshared.a
+sudo ln -s /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/lib/ld-linux.so.3 /lib/ld-linux.so.3
+
+steve@D7010:~/code/code/emulator/arm32/o_uARM/test$ ../elf2uarm -k helloWorld
+steve@D7010:~/code/code/emulator/arm32/o_uARM/test$ nm helloworld >helloword.sym
+

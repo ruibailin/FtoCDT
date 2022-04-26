@@ -1,0 +1,24 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c++ complier:
+1.
+2.preprocessor
+
+3.includes
+"${workspace_loc:/r_spike/src/no/fdt}"
+"${workspace_loc:/r_spike/src/no/fesvr}"
+"${workspace_loc:/r_spike/src/no}"
+"${workspace_loc:/r_spike/src/no/riscv}"
+"${workspace_loc:/r_spike/src/no/riscv/opcode}"
+"${workspace_loc:/r_spike/src/no/softfloat}"
+4.
+5.
+6.
+7.
+-c -fmessage-length=0 -std=c++11 -Wno-unused
+
+C. gcc c++ Linker
+1.
+2.Libraries
+dl
+pthread

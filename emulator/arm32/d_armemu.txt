@@ -1,0 +1,46 @@
+1.Compile armemu
+
+cd ./armemu
+make
+
+
+2. compile test.bin
+cd ./armemu/test
+use  armv5e toolchains
+#CC := arm-eabi-gcc
+CC := arm-poky-linux-gnueabi-gcc -marm --sysroot=$SDKTARGETSYSROOT
+#LD := arm-eabi-ld
+LD := arm-poky-linux-gnueabi-ld  --sysroot=$SDKTARGETSYSROOT
+#OBJDUMP := arm-eabi-objdump
+OBJDUMP := arm-poky-linux-gnueabi-objdump
+#OBJCOPY := arm-eabi-objcopy
+OBJCOPY := arm-poky-linux-gnueabi-objcopy
+
+cp /home/steve/code/arch/armv5e/sysroots/armv5e-poky-linux-gnueabi/usr/lib/arm-poky-linux-gnueabi/8.2.0/libgcc.a .
+
+otherwise we can't find libgcc.a
+
+3. produce bdev.bin
+cd ./armemu
+chmod +x doit
+./doit
+
+
+4. run
+cd ./armemu/build-generic
+cp ../armemu.conf .
+modify dir to point correct bdev.bin and test.bin
+[rom]
+file = ../test/test.bin
+[block]
+file = ../bdev.bin
+
+./armemu
+
+there will a windows and print.
+when key board is hit, print: "irq keyboard "
+
+
+
+
+

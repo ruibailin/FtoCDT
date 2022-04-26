@@ -1,0 +1,41 @@
+Properties->c/c++ build->settings->Tool Settings
+
+A.gcc c++ complier:
+1.
+2.preprocessor
+VERILATOR
+TEST_HARNESS=VTestHarness
+VM_C11=1
+VM_COVERAGE=0
+VM_PARALLEL_BUILDS=1
+VM_THREADS=0
+VM_TRACE=0
+VM_TRACE_FST=0
+VM_TRACE_THREADS=0
+VM_TRACE_FST_WRITER_THREAD=0
+VM_PREFIX=VTestHarness
+VM_MODPREFIX=VTestHarness
+
+3.includes
+/home/steve/code/code/sonicboom/verilator/include
+/home/steve/code/code/sonicboom/chipyard/riscv-tools-install/include
+/home/steve/code/code/sonicboom/chipyard/tools/DRAMSim2
+/home/steve/code/code/sonicboom/verilator/include/vltstd
+4.
+5.
+6.
+7.
+-c -fmessage-length=0 -std=c++11 -fPIC
+
+C. gcc c++ Linker
+1.
+2.Libraries
+pthread
+fesvr
+dramsim
+
+/home/steve/code/code/sonicboom/chipyard/riscv-tools-install/lib
+/home/steve/code/code/sonicboom/chipyard/tools/DRAMSim2
+/home/steve/code/code/sonicboom/chipyard/sims/verilator
+3.Misc
+-no-pie

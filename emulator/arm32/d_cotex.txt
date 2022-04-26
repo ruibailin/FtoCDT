@@ -1,0 +1,6 @@
+#options de compilation/edition des liens
+INCLUDE=-I$(INCDIR)
+CFLAGS=-Wall $(INCLUDE)
+LFLAGS=-lreadline -lm -lcurses
+CFLAGS_DBG=$(CFLAGS) -g -DDEBUG -DVERBOSE
+CFLAGS_RLS=$(CFLAGS)

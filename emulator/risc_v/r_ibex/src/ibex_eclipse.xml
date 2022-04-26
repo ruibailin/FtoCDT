@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+<includepath>/home/steve/code/code/sonicboom/verilator/include</includepath>
+<includepath>/home/steve/code/code/sonicboom/verilator/include/vltstd</includepath>
+<includepath workspace_path="true">/c_ibex/src/sim-verilator</includepath>
+<includepath workspace_path="true">/c_ibex/src/src/lowrisc_dv_verilator_ibex_pcounts_0/cpp</includepath>
+<includepath workspace_path="true">/c_ibex/src/src/lowrisc_dv_verilator_memutil_dpi_0/cpp</includepath>
+<includepath workspace_path="true">/c_ibex/src/src/lowrisc_dv_verilator_memutil_verilator_0/cpp</includepath>
+<includepath workspace_path="true">/c_ibex/src/src/lowrisc_dv_verilator_simutil_verilator_0/cpp</includepath>
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+<macro>
+<name>TOP_MODULE</name><value>ibex_simple_system</value>
+</macro>
+<macro>
+<name>VM_TRACE_FMT_FST</name><value/>
+</macro>
+<macro>
+<name>TOPLEVEL_NAME</name><value>ibex_simple_system</value>
+</macro>
+<macro>
+<name>VM_COVERAGE</name><value>0</value>
+</macro>
+<macro>
+<name>VM_SC</name><value>0</value>
+</macro>
+<macro>
+<name>VM_TRACE</name><value>1</value>
+</macro>
+<macro>
+<name>VM_TRACE_FST</name><value>1</value>
+</macro>
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

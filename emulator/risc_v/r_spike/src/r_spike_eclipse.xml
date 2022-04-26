@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+<includepath workspace_path="true">/r_spike/src/no/fdt</includepath>
+<includepath workspace_path="true">/r_spike/src/no/fesvr</includepath>
+<includepath workspace_path="true">/r_spike/src/no</includepath>
+<includepath workspace_path="true">/r_spike/src/no/riscv</includepath>
+<includepath workspace_path="true">/r_spike/src/no/riscv/opcode</includepath>
+<includepath workspace_path="true">/r_spike/src/no/softfloat</includepath>
+
+</language>
+<language name="C Source File">
+<includepath workspace_path="true">/r_spike/src/no</includepath>
+<includepath workspace_path="true">/r_spike/src/no/fdt</includepath>
+<includepath workspace_path="true">/r_spike/src/no/fesvr</includepath>
+<includepath workspace_path="true">/r_spike/src/no/riscv</includepath>
+<includepath workspace_path="true">/r_spike/src/no/riscv/opcode</includepath>
+<includepath workspace_path="true">/r_spike/src/no/softfloat</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>
