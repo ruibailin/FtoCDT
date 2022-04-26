@@ -1,0 +1,47 @@
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/riscv64-softmmu/qemu-system-riscv64 \
+    -nographic \
+    -machine virt \
+    -smp 4 \
+    -m 2G \
+    -kernel /home/steve/code/code/emulator/qemu_test/riscv64/fedora/bbl \
+    -object rng-random,filename=/dev/urandom,id=rng0 \
+    -device virtio-rng-device,rng=rng0 \
+    -append "console=ttyS0 ro root=/dev/vda" \
+    -device virtio-blk-device,drive=hd0 \
+    -drive file=/home/steve/code/code/emulator/qemu_test/riscv64/fedora/stage4-disk.img,format=raw,id=hd0 \
+    -device virtio-net-device,netdev=usernet \
+    -netdev user,id=usernet,hostfwd=tcp::10000-:22
+
+/home/steve/code/code/emulator/qumu420/riscv32/src/qemu-system-riscv64/Default/qemu-system-riscv64 \
+    -nographic \
+    -machine virt \
+    -smp 4 \
+    -m 2G \
+    -kernel /home/steve/code/code/emulator/qemu_test/riscv64/fedora/bbl \
+    -object rng-random,filename=/dev/urandom,id=rng0 \
+    -device virtio-rng-device,rng=rng0 \
+    -append "console=ttyS0 ro root=/dev/vda" \
+    -device virtio-blk-device,drive=hd0 \
+    -drive file=/home/steve/code/code/emulator/qemu_test/riscv64/fedora/stage4-disk.img,format=raw,id=hd0 \
+    -device virtio-net-device,netdev=usernet \
+    -netdev user,id=usernet,hostfwd=tcp::10000-:22
+    
+name:root
+pass:riscv
+
+/home/steve/code/arch/x64/qemu/5_2_0/qemu-5.2.0/bin/qemu-system-riscv64 \
+    -nographic \
+    -machine virt \
+    -smp 4 \
+    -m 2G \
+    -kernel /home/steve/code/code/emulator/qemu_test/riscv64/fedora/bbl \
+    -object rng-random,filename=/dev/urandom,id=rng0 \
+    -device virtio-rng-device,rng=rng0 \
+    -append "console=ttyS0 ro root=/dev/vda" \
+    -device virtio-blk-device,drive=hd0 \
+    -drive file=/home/steve/code/code/emulator/qemu_test/riscv64/fedora/stage4-disk.img,format=raw,id=hd0 \
+    -device virtio-net-device,netdev=usernet \
+    -netdev user,id=usernet,hostfwd=tcp::10000-:22
+
+rom: requested regions overlap (rom phdr #0: /home/steve/code/code/emulator/qemu_test/riscv64/fedora/bbl. free=0x0000000080011488, addr=0x0000000080000000)
+qemu-system-riscv64: rom check and register reset failed

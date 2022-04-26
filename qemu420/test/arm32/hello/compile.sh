@@ -1,0 +1,4 @@
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-as -mcpu=arm926ej-s -g startup.s -o startup.o
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc  -c -mcpu=arm926ej-s -g hello.c -o hello.o
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ld -T hello.ld hello.o startup.o -o hello.elf
+/home/steve/code/arch/armv5e/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-objcopy -O binary hello.elf hello.bin

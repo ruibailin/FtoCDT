@@ -1,0 +1,1 @@
+/home/steve/code/arch/x64/qemu/0_12_3/qemu-0.12.3/bin/qemu-system-arm -M versatilepb -m 128M -nographic -kernel /home/steve/code/code/emulator/qumu/test/arm32/hello/hello.bin

@@ -1,0 +1,64 @@
+
+1. download
+
+$ mkdir nuttx 
+$ cd nuttx 
+$ git clone https://github.com/apache/incubator-nuttx.git nuttx 
+$ git clone https://github.com/apache/incubator-nuttx-apps apps 
+
+2. configure
+$ cd nuttx 
+make distclean
+export PATH=/home/steve/code/arch/x64/kconfig-tools/bin:$PATH
+$ ./tools/configure.sh hifive1-revb:nsh   //nsh: interactive commandline NuttShell
+$ make menuconfig 
+system steup -> System Type -> FE310 Chip Selection -> FE310_QEMU
+
+
+3. make
+use riscv64 toolchain
+$ r64
+
+make
+LD: nuttx
+riscv64-unknown-elf-ld: /home/steve/code/code/sonicboom/chipyard/riscv-tools-install/bin/../lib/gcc/riscv64-unknown-elf/9.2.0/libgcc.a(div.o): ABI is incompatible with that of the selected emulation:
+  target emulation `elf64-littleriscv' does not match `elf32-littleriscv'
+riscv64-unknown-elf-ld: failed to merge target specific data of file /home/steve/code/code/sonicboom/chipyard/riscv-tools-install/bin/../lib/gcc/riscv64-unknown-elf/9.2.0/libgcc.a(div.o)
+Makefile:161: recipe for target 'nuttx' failed
+make[1]: *** [nuttx] Error 1
+make[1]: Leaving directory '/home/steve/code/code/nuttx/10.0.1/nuttx/arch/risc-v/src'
+tools/Makefile.unix:415: recipe for target 'nuttx' failed
+make: *** [nuttx] Error 2
+
+use make -n -d to check the ld command:
+riscv64-unknown-elf-ld --entry=__start --gc-sections -melf32lriscv \
+-T/home/steve/code/code/nuttx/10.0.1/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld-qemu.script \
+-L"/home/steve/code/code/nuttx/10.0.1/nuttx/staging" \
+-L"/home/steve/code/code/nuttx/10.0.1/nuttx/arch/risc-v/src/board" \
+-L "/home/steve/code/code/sonicboom/chipyard/riscv-tools-install/lib/gcc/riscv64-unknown-elf/9.2.0" \
+-L "/home/steve/code/code/sonicboom/chipyard/riscv-tools-install/riscv64-unknown-elf/lib" \
+-o "/home/steve/code/code/nuttx/10.0.1/nuttx/nuttx" fe310_vectors.o  \
+--start-group -lsched -ldrivers -lboards -lc -lmm -larch -lapps -lfs -lbinfmt -lboard -lgcc -lm --end-group
+
+
+-->
+riscv64-unknown-elf-ld --entry=__start --gc-sections -melf32lriscv \
+-T/home/steve/code/code/nuttx/10.0.1/nuttx/boards/risc-v/fe310/hifive1-revb/scripts/ld-qemu.script \
+-L"/home/steve/code/code/nuttx/10.0.1/nuttx/staging" \
+-L"/home/steve/code/code/nuttx/10.0.1/nuttx/arch/risc-v/src/board" \
+-L "/home/steve/code/arch/riscv32/gcc/lib/gcc/riscv32-unknown-elf/9.2.0" \
+-L "/home/steve/code/arch/riscv32/gcc/riscv32-unknown-elf/lib" \
+-o "/home/steve/code/code/nuttx/10.0.1/nuttx/nuttx" ./arch/risc-v/src/fe310_vectors.o \
+--start-group -lsched -ldrivers -lboards -lc -lmm -larch -lapps -lfs -lbinfmt -lboard -lgcc -lm --end-group
+
+4. run
+/home/steve/code/arch/x64/qemu/5_2_0/qemu-5.2.0/bin/qemu-system-riscv32 -nographic -machine sifive_e -kernel /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310
+/home/steve/code/code/qemu/5_2_0/qemu-5.2.0/build/qemu-system-riscv32 -nographic -machine sifive_e -kernel /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310
+
+/home/steve/code/arch/x64/qemu/4_2_0/qemu-4.2.0/bin/qemu-system-riscv32 -nographic -machine sifive_e -kernel /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310
+/home/steve/code/code/qemu/4_2_0/qemu-4.2.0/riscv32-softmmu/qemu-system-riscv32 -nographic -machine sifive_e -kernel /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310
+
+5.debug
+/home/steve/code/arch/x64/qemu/5_2_0/qemu-5.2.0/bin/qemu-system-riscv32 -nographic -machine sifive_e -kernel /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310 -s -S
+/home/steve/code/arch/riscv64/gcc/bin/riscv64-unknown-elf-gdb /home/steve/code/code/emulator/qumu/test/riscv32/nuttx10-fe310
+
